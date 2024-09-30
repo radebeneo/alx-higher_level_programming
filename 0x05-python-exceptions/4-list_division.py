@@ -3,10 +3,11 @@
 def list_division(my_list_1, my_list_2, list_length):
     
     new_list = []
+    index = 0
     
-    for  item in range(list_length):
+    while index < list_length:
         try:
-            div = my_list_1[item] / my_list_2[item]
+            div = my_list_1[index] / my_list_2[index]
         except TypeError:
             print("wrong type")
             div = 0
@@ -18,5 +19,7 @@ def list_division(my_list_1, my_list_2, list_length):
             div = 0
         finally:
             new_list.append(div)
+
+        index += 1
 
     return new_list
