@@ -1,4 +1,3 @@
 #!/usr/bin/python3
-
-import string
-print(string.ascii_uppercase)
+from string import ascii_uppercase
+__import__('os').write(1, ascii_uppercase.encode() + b'\n')
