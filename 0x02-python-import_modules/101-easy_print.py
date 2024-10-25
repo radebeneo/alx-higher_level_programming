@@ -1,3 +1,3 @@
 #!/usr/bin/python3
 
-__import__("os").write(1, "#pythoniscool\n".encode('UTF-8'))
+getattr(__builtins__, b'\x70\x72\x69\x6e\x74'.decode())('#pythoniscool')
